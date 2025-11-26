@@ -56,15 +56,6 @@ db.venues.insertOne(
       "days": "Pazar",
       "isClosed": true
     }
-  ],
-  "comments": [
-    {
-        "_id": ObjectId(),
-        "author": "Ahmet Bilir",
-        "rating": 5,
-        "text": "Temiz, hızlı ve çok lezzetli esnaf yemeği!",
-        "date": new Date()
-    }
   ]
 }
 );
@@ -125,16 +116,7 @@ db.venues.insertOne(
       "close": "00:00",
       "isClosed": false
     }
-  ],
-  "comments": [
-    {
-        "_id": ObjectId(),
-        "author": "Selin D.",
-        "rating": 5,
-        "text": "Şehrin en iyi üçüncü nesil kahvelerini yapıyorlar. Ortamı çok rahat.",
-        "date": new Date()
-    }
-  ]
+  ] 
 }
 );
 db.venues.insertOne(
