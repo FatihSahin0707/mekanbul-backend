@@ -1,0 +1,199 @@
+const database = 'mekanbul';
+use(database);
+db.venues.insertOne(
+{
+  "name": "Barida Cam Kafe",
+  "address": "Süleyman Demirel Üniversitesi",
+  "rating": 5,
+  "foodanddrink": [
+    "çay",
+    "kahve",
+    "pasta"
+  ],
+  "coordinates": [
+    37.83226584629666,
+    30.524732239878013
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Cuma",
+      "open": "9:00",
+      "close": "23:00",
+      "isClosed": false
+    },
+    {
+      "days": "Cumartesi-Pazar",
+      "open": "11:00",
+      "close": "17:00",
+      "isClosed": false
+    }
+  ]
+}
+ );
+db.venues.insertOne(
+{
+  "name": "Bizim Şehir Lokantası",
+  "address": "Gülcü Mahallesi, Belediye İş Merkezi Altı, Isparta",
+  "rating": 4.3,
+  "foodanddrink": [
+    "Sulu Yemekler",
+    "Günün Çorbası",
+    "İskender",
+    "Sütlaç"
+  ],
+  "coordinates": [
+    30.5495,
+    37.7600
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Cumartesi",
+      "open": "07:00",
+      "close": "19:00",
+      "isClosed": false
+    },
+    {
+      "days": "Pazar",
+      "isClosed": true
+    }
+  ],
+  "comments": [
+    {
+        "_id": ObjectId(),
+        "author": "Ahmet Bilir",
+        "rating": 5,
+        "text": "Temiz, hızlı ve çok lezzetli esnaf yemeği!",
+        "date": new Date()
+    }
+  ]
+}
+);
+db.venues.insertOne(
+{
+  "name": "Lezzet Durağı Ev Yemekleri",
+  "address": "Gülcü Mahallesi, 110. Cadde, No: 15/A, Isparta",
+  "rating": 4.8,
+  "foodanddrink": [
+    "Sulu Yemekler",
+    "Zeytinyağlılar",
+    "Pilav",
+    "Komposto"
+  ],
+  "coordinates": [
+    30.5612,
+    37.7610
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Cuma",
+      "open": "08:00",
+      "close": "17:00",
+      "isClosed": false
+    },
+    {
+      "days": "Cumartesi-Pazar",
+      "isClosed": true
+    }
+  ]
+}
+);
+db.venues.insertOne(
+{
+  "name": "Antre Cadde",
+  "address": "Çelebiler Mahallesi, 107. Cadde, No: 12/B, Isparta Merkez",
+  "rating": 4.5,
+  "foodanddrink": [
+    "Özel Kahveler",
+    "Tatlı Çeşitleri",
+    "Soğuk Sandviçler",
+    "Ev Yapımı Limonata"
+  ],
+  "coordinates": [
+    30.5655,
+    37.7690
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Cuma",
+      "open": "08:30",
+      "close": "23:00",
+      "isClosed": false
+    },
+    {
+      "days": "Cumartesi-Pazar",
+      "open": "09:00",
+      "close": "00:00",
+      "isClosed": false
+    }
+  ],
+  "comments": [
+    {
+        "_id": ObjectId(),
+        "author": "Selin D.",
+        "rating": 5,
+        "text": "Şehrin en iyi üçüncü nesil kahvelerini yapıyorlar. Ortamı çok rahat.",
+        "date": new Date()
+    }
+  ]
+}
+);
+db.venues.insertOne(
+{
+  "name": "Akdeniz Balık Evi",
+  "address": "Pirimehmet Mahallesi, 150. Cadde No: 20, Isparta",
+  "rating": 4.6,
+  "foodanddrink": [
+    "Izgara Balık",
+    "Mezeler",
+    "Deniz Ürünleri",
+    "Rakı"
+  ],
+  "coordinates": [
+    30.5488,
+    37.7715
+  ],
+  "hours": [
+    {
+      "days": "Salı-Pazar",
+      "open": "18:00",
+      "close": "23:30",
+      "isClosed": false
+    },
+    {
+      "days": "Pazartesi",
+      "isClosed": true
+    }
+  ]
+}
+);
+db.venues.insertOne(
+{
+  "name": "Tarihi Isparta Köftecisi",
+  "address": "Çarşı içi, Hükümet Konağı Yanı, Isparta",
+  "rating": 4.7,
+  "foodanddrink": [
+    "Isparta Köftesi",
+    "Piyaz",
+    "Sütlaç",
+    "Gazoz"
+  ],
+  "coordinates": [
+    30.5560,
+    37.7650
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Cumartesi",
+      "open": "10:00",
+      "close": "20:00",
+      "isClosed": false
+    },
+    {
+      "days": "Pazar",
+      "open": "12:00",
+      "close": "18:00",
+      "isClosed": false
+    }
+  ]
+}
+);

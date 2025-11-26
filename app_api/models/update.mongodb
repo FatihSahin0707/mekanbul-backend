@@ -1,0 +1,86 @@
+const database = 'mekanbul';
+use(database);
+db.venues.updateOne({"name":"Barida Cam Kafe"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Sinan",
+      "rating": 5,
+      "text": "Kahveler harika",
+      "date": new Date()
+    }
+  }
+}
+)
+
+db.venues.updateOne(
+    { "name": "Bizim Şehir Lokantası" },
+    {
+        $push: {
+            "comments": {
+                "_id": ObjectId(),
+                "author": "Elif Tekin",
+                "rating": 4,
+                "text": "Porsiyonlar doyurucu,yemekler lezzetli ve fiyatlar uygun.",
+                "date": new Date()
+            }
+        }
+    }
+)
+
+db.venues.updateOne(
+    { "name": "Lezzet Durağı Ev Yemekleri" },
+    {
+        $push: {
+            "comments": {
+                "_id": ObjectId(),
+                "author": "Ayşe Güneş",
+                "rating": 4,
+                "text": "Tavuk sote harikaydı ama mekan biraz kalabalıktı.",
+                "date": new Date()
+            }
+        }
+    }
+)
+db.venues.updateOne(
+    { "name": "Antre Cadde" },
+    {
+        $push: {
+            "comments": {
+                "_id": ObjectId(),
+                "author": "Kaan Mert",
+                "rating": 4,
+                "text": "Cheesecake'i harikaydı, ders çalışmak için ideal bir yer.",
+                "date": new Date()
+            }
+        }
+    }
+)
+db.venues.updateOne(
+    { "name": "Akdeniz Balık Evi" },
+    {
+        $push: {
+            "comments": {
+                "_id": ObjectId(),
+                "author": "Deniz Kara",
+                "rating": 5,
+                "text": "Hayatımda yediğim en taze ve lezzetli kalamardı.",
+                "date": new Date()
+            }
+        }
+    }
+)
+db.venues.updateOne(
+    { "name": "Tarihi Isparta Köftecisi" },
+    {
+        $push: {
+            "comments": {
+                "_id": ObjectId(),
+                "author": "Fatma Bilgin",
+                "rating": 4,
+                "text": "Köfte klasikleşmiş lezzette, piyazı mutlaka deneyin.",
+                "date": new Date()
+            }
+        }
+    }
+)
