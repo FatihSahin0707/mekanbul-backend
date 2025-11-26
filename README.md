@@ -37,5 +37,4 @@ Mekanbul uygulaması için geliştirilmiş REST API servisidir. Bu proje; mekan 
 - Mekan ekleme/güncelleme/silme  
 - Yorum ekleme/silme  
 
-## 📄 Lisans
-Bu proje MIT lisansı ile lisanslanmıştır.
+
