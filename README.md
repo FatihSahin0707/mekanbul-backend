@@ -3,7 +3,7 @@
 Mekanbul uygulaması için geliştirilmiş REST API servisidir. Bu proje; mekan listeleme, yorum ekleme ve yönetim işlemlerini sağlayan sunucu tarafı kodlarını içerir.
 
 # Kullanılan Teknolojiler
-- Node.js
+- Node.js 
 - Express.js
 - MongoDB
 - Mongoose
