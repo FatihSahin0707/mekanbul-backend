@@ -1,7 +1,6 @@
-var mongoose = require('mongoose');
-
-var dbURI = 'mongodb://localhost:27017/mekanbul';
-//var dbURI = 'mongodb+srv://FatihSahin:fatih123@cluster0.comwejd.mongodb.net/?appName=Cluster0';
+require('dotenv').config();
+var mongoose=require("mongoose");
+var dbURI=process.env.MONGODB_URI || "mongodb://localhost/mekanbul";
 
 mongoose.connect(dbURI);
 
